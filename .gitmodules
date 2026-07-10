@@ -1,0 +1,3 @@
+[submodule "vendor/video-use"]
+	path = vendor/video-use
+	url = https://github.com/Zitr0/video-use

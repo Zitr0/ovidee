@@ -1,0 +1,31 @@
+# Credenciales — nunca al repo (PRD FR2)
+.env
+
+# Node
+node_modules/
+.next/
+dist/
+*.tsbuildinfo
+
+# Python
+engine/.venv/
+__pycache__/
+*.pyc
+
+# Datos locales
+db/app.db
+db/app.db-*
+
+# Proyectos de video del usuario (video, assets, renders)
+outputs/
+
+# Runtime vendorizado localmente (p. ej. GSAP para HyperFrames) — se descarga
+# una vez en el onboarding, nunca se sube al repo
+.vendor/
+
+# Sistema
+.DS_Store
+
+# Sesión local del agente y skills instaladas localmente
+.claude/
+.agents/

@@ -1,0 +1,15 @@
+# Política de seguridad de la cadena de suministro (PRD FR1)
+
+packages:
+  - apps/*
+
+# Rechaza versiones publicadas hace menos de 3 días (4320 min) — defensa
+# contra cuentas de mantenedores comprometidas.
+minimumReleaseAge: 4320
+
+# pnpm 10 bloquea todos los scripts de ciclo de vida de dependencias.
+# Solo estos paquetes, revisados manualmente, pueden compilar/instalar binarios.
+onlyBuiltDependencies:
+  - better-sqlite3
+  - esbuild
+  - sharp

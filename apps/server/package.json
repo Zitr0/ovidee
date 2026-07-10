@@ -1,0 +1,17 @@
+{
+  "name": "@ovidee/server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.90.0",
+    "@fastify/cors": "^11.0.0",
+    "@fastify/multipart": "^9.0.0",
+    "@fastify/websocket": "^11.0.0",
+    "better-sqlite3": "^12.0.0",
+    "fastify": "^5.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+[project]
+name = "ovidee-engine"
+version = "0.1.0"
+description = "Motor local de transcripción y edición — Whisper local, sin APIs adicionales"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    # Transcripción local (reemplazo de ElevenLabs Scribe)
+    "faster-whisper>=1.1",
+    # Dependencias de los helpers de vendor/video-use
+    "requests",
+    "librosa",
+    "matplotlib",
+    "pillow",
+    "numpy",
+]
+
+[project.optional-dependencies]
+# Diarización de hablantes 100% local (descarga única del modelo desde HF en el setup)
+diarization = ["pyannote.audio>=3.1"]
+
+[tool.uv]
+package = false
